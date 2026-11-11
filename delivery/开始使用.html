@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>帧幕 Frameveil · 开始使用</title>
+<style>
+:root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:#0f1117;color:#eef0fa;font:16px/1.8 "Microsoft YaHei",system-ui,sans-serif}main{max-width:960px;margin:auto;padding:52px 24px 80px}.brand{letter-spacing:.18em;color:#b2f6da;font-size:13px}h1{font-size:42px;line-height:1.2;margin:16px 0}h2{font-size:23px;margin:0 0 12px}.muted{color:#abb1c8}.card{padding:26px;background:#191c26;border:1px solid #2c3141;border-radius:20px;margin:20px 0}.steps{counter-reset:step;padding:0;list-style:none}.steps li{counter-increment:step;margin:18px 0;padding-left:44px;position:relative}.steps li:before{content:counter(step);position:absolute;left:0;top:1px;width:28px;height:28px;line-height:28px;text-align:center;background:#b2f6da;color:#14261e;border-radius:50%;font-weight:bold}strong{color:#b2f6da}code{background:#272b3a;padding:3px 7px;border-radius:5px;overflow-wrap:anywhere}a{color:#c2b1ff}.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.grid .card{margin:0}footer{font-size:13px;color:#abb1c8}table{width:100%;border-collapse:collapse}td{border-top:1px solid #303548;padding:10px 4px}@media(max-width:650px){.grid{grid-template-columns:1fr}h1{font-size:32px}}
+</style><main>
+<div class="brand">FRAMEVEIL / STUDIO 0.2.0</div><h1>帧幕，让素材成为画面。</h1>
+<p class="muted">图片、多图轮播、视频 · Windows x64 · 本地处理 · 无需配置开发环境</p>
+<section class="card"><h2>第一次使用 · Windows 11</h2><ol class="steps">
+<li>完整解压压缩包，双击 <code>Frameveil.exe</code>。请保留旁边的 <code>_internal</code> 文件夹。</li>
+<li>点击右侧 <strong>摄像头组件管理</strong> → <strong>安装 / 修复 Windows 原生组件</strong>，在 Windows 管理员授权弹窗点击“是”。首次注册需要授权。</li>
+<li>向下滚动右侧参数区，点击 <strong>应用会议兼容预设</strong>，采用原生 720p / 30 FPS。</li>
+<li>导入图片或视频，检查预览，再点击 <strong>开启虚拟摄像头</strong>。</li>
+<li>重新打开微信或钉钉的摄像头列表，选择 <strong>Frameveil Camera (Windows Virtual Camera)</strong>。</li>
+<li>用完点击关闭输出，或退出帧幕。每次启动默认关闭输出。</li></ol></section>
+<div class="grid"><section class="card"><h2>播放控制</h2><p>导入多张图片后设置每张时长，可顺序或随机循环。视频支持速度与进度调整，不输出音轨。</p><p><strong>暂停</strong>冻结画面；<strong>黑屏待机</strong>持续发送黑色画面；恢复后继续播放。镜像、裁剪、留边颜色均可调整。</p></section>
+<section class="card"><h2>遇到问题</h2><p>找不到设备：先开启帧幕，再刷新设备列表，必要时重启会议客户端。</p><p>打开失败：确认选择了同名原生设备，通过<strong>接收自检</strong>和<strong>诊断 / 日志</strong>检查。管理员授权取消时，重新安装组件。</p></section></div>
+<section class="card"><h2>系统和验证范围</h2><table><tr><td>推荐平台</td><td>Windows 11 x64，build 22000+；建议 4 GB 内存，预留 600 MB</td></tr><tr><td>Windows 10</td><td>x64 1809+ 保留 Unity / OBS DirectShow；选择 Unity Video Capture。该平台尚未完成实机客户端回归。</td></tr><tr><td>本机已验证</td><td>Windows 11 build 26200，用户反馈微信正常显示、钉钉正常显示无报错；系统独立接收与黑屏测试通过。</td></tr><tr><td>仍待验证</td><td>会议远端、长期运行、其他系统和硬件。安卓版本尚在准备中。</td></tr></table><p class="muted">首次组件注册需要管理员权限，之后普通运行。当前 EXE 未签名。详细信息见 <a href="兼容性与系统要求.md">兼容性与系统要求</a>及<a href="本地验证记录.md">本地验证记录</a>。</p></section>
+<footer><p>素材与偏好保存在本机。视频不输出声音，不读取实体摄像头或麦克风。请使用自己的测试素材完成接收验收。</p><p>本包包含应用源码 ZIP；原创源码 GPL-3.0-or-later，第三方组件遵循各自许可。见 <a href="LICENSE">LICENSE</a>、<a href="THIRD_PARTY.md">第三方组件说明</a>。2026-11-11。</p></footer></main></html>

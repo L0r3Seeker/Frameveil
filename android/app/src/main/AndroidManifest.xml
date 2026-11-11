@@ -1,0 +1,14 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <queries>
+        <package android:name="com.tencent.mm" />
+        <package android:name="com.alibaba.android.rimet" />
+    </queries>
+    <application android:allowBackup="false" android:label="帧幕" android:icon="@drawable/frameveil_icon" android:theme="@style/FrameveilTheme" android:supportsRtl="true">
+        <activity android:name=".MainActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

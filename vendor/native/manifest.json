@@ -1,0 +1,10 @@
+{
+  "version": "0.2.0",
+  "source": "native/",
+  "minimum_windows_build": 22000,
+  "sha256": {
+    "FrameveilCameraHost.exe": "a314b9a0d4dcbd98ef9c59e0bd032424841bc8eca64ccbb55843b41e02870eee",
+    "FrameveilCameraProbe.exe": "3889abf89eb85873b42241dc2ad13d675fcc7ca1a0ab657d7670e6fc7ba06b1a",
+    "FrameveilMediaSource.dll": "210dd8f9721e0bc9805f334cbe9eca34887be5c6aceb3a380a4409deee0ea6b9"
+  }
+}

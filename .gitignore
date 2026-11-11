@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+build/
+dist/
+.venv/
+*.spec
+artifacts/
+.upstream/
+.build-tools/
+release/
+android/.gradle/
+android/.idea/
+android/local.properties
+*.jks
+*.keystore
+keystore.properties
